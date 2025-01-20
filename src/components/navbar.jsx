@@ -1,9 +1,19 @@
 function Navbar(){
     return(
     <>
-    <div className="flex justify-center ">
-        <img className="w-20 h-20" src="/src/assets/logo.svg" alt="Computer_Engineering_Logo"></img>
-        
+    <div className="grid grid-cols-6 shadow-md pb-2">
+        {/* Image section */}
+        <div className="grid justify-center items-center pt-2 col-span-5">
+            <img className="w-20 h-20 " src="/src/assets/logo.svg" alt="Computer_Engineering_Logo"></img>
+            <div className="flex justify-center">
+                <p>EIE 413</p>
+            </div>
+        </div>
+
+        {/* Past Records Section */}
+        <div className="flex justify-center items-center">
+            <button className="bg-gray-100 p-3 rounded-lg ">Previous Records</button>
+        </div>
     </div>
     </>
     );
