@@ -11,7 +11,7 @@ function Navbar(){
         </div>
 
         {/* Past Records Section */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center sm:pr-6">
             <button className="bg-gray-100 p-3 rounded-lg ">Previous Records</button>
         </div>
     </div>
