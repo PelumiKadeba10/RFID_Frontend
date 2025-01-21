@@ -4,7 +4,7 @@ function Hero(){
       <div className="grid grid-cols-2">
         {/* Text-section */}
         <div className="grid grid-cols-1 justify-center p-7">
-            <h1 className="font-bold text-4xl">RFID Attendance System with Web-Application Integration</h1>
+            <h1 className="font-bold text-4xl">RFID Attendance System with Web Application Integration</h1>
             <p className="pt-8 font-sans text-lg text-justify">
                 Welcome to our RFID Attendance System with Web App Integration.
                 Easily track attendance in real-time with live data uploads and access

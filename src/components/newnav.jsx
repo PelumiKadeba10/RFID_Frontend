@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-function Navbar(){
+function Newnav(){
     return(
     <>
-    <div className="grid grid-cols-6 shadow-md pb-2">
+    <div className="grid grid-cols-6 shadow-lg pb-2">
         {/* Image section */}
         <div className="grid justify-center items-center pt-2 col-span-5">
             <img className="w-20 h-20 " src="/src/assets/logo.svg" alt="Computer_Engineering_Logo"></img>
@@ -14,11 +14,11 @@ function Navbar(){
 
         {/* Past Records Section */}
         <div className="flex justify-center items-center sm:pr-6">
-            <Link to="/past_records"><button className="bg-gray-100 text-black p-3 rounded-lg shadow-md hover:bg-black hover:text-white ">Previous Records</button></Link>
+            <Link to="/"><button className="bg-gray-100 p-3 rounded-lg shadow-md hover:bg-black hover:text-white ">Home</button></Link>
         </div>
     </div>
     </>
     );
 }
 
-export default Navbar
+export default Newnav
