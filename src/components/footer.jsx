@@ -5,7 +5,7 @@ function Footer(){
 
         {/* Left Section */}
         <div className="flex items-center justify-center">
-          <a href=""><img className="w-40 h-40" src="/src/assets/cu-logo.svg"></img></a> 
+          <a href=""><img className="w-40 h-40" src="/cu-logo.svg"></img></a> 
         </div>
 
         {/* Center Section */}

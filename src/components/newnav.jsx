@@ -6,7 +6,7 @@ function Newnav(){
     <div className="grid grid-cols-6 shadow-lg pb-2 sticky w-full top-0 z-50 bg-white">
         {/* Image section */}
         <div className="grid justify-center items-center pt-2 col-span-5">
-            <img className="w-20 h-20 " src="/src/assets/logo.svg" alt="Computer_Engineering_Logo"></img>
+            <img className="w-20 h-20 " src="/logo.svg" alt="Computer_Engineering_Logo"></img>
             <div className="flex justify-center">
                 <p>EIE 413</p>
             </div>
