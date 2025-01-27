@@ -1,7 +1,7 @@
 function Hero(){
     return(
       <>
-      <div className="grid grid-cols-2">
+      <div className="grid sm:grid-cols-2 grid-cols-1 px-5">
         {/* Text-section */}
         <div className="grid grid-cols-1 justify-center p-7">
             <h1 className="font-bold text-4xl">RFID Attendance System with Web Application Integration</h1>

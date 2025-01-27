@@ -1,7 +1,7 @@
 function Footer(){
     return(
     <>
-    <div className="bg-slate-900 sm:px-4 pt-4 text-cyan-50 grid sm:grid-cols-3 grid-cols-1 sm:text-center ">
+    <div className="bg-slate-900 sticky w-full z-50sm:px-4 pt-4 text-cyan-50 grid sm:grid-cols-3 grid-cols-1 sm:text-center ">
 
         {/* Left Section */}
         <div className="flex items-center justify-center">
