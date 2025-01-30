@@ -52,47 +52,10 @@ function Upload() {
 
     return (
         <div className="bg-slate-50 grid grid-cols-1 justify-center p-6">
-            <h1 className="text-4xl font-semibold text-center mb-4">LIVE UPLOAD</h1>
+            <h1 className="text-4xl font-semibold text-center mb-4">UPLOADS</h1>
 
             <div className='border border-r-8 p-6 shadow-inner mx-6'>
                 
-                {logs.length === 0 ? (
-                    <p className="text-center font-bold text-xl">No logs yet...</p>
-                ) : (
-                    <table {...getTableProps()} className="w-full border-collapse border border-gray-300">
-                        <thead className="bg-gray-100">
-                            {headerGroups.map((headerGroup) => (
-                                <tr {...headerGroup.getHeaderGroupProps()}>
-                                    {headerGroup.headers.map((column) => (
-                                        <th
-                                            {...column.getHeaderProps()}
-                                            className="border border-gray-300 px-4 py-2 text-left"
-                                        >
-                                            {column.render('Header')}
-                                        </th>
-                                    ))}
-                                </tr>
-                            ))}
-                        </thead>
-                        <tbody {...getTableBodyProps()}>
-                            {rows.map((row) => {
-                                prepareRow(row);
-                                return (
-                                    <tr {...row.getRowProps()} className="hover:bg-gray-100">
-                                        {row.cells.map((cell) => (
-                                            <td
-                                                {...cell.getCellProps()}
-                                                className="border border-gray-300 px-4 py-2"
-                                            >
-                                                {cell.render('Cell')}
-                                            </td>
-                                        ))}
-                                    </tr>
-                                );
-                            })}
-                        </tbody>
-                    </table>
-                )}
             </div>
         </div>
     );
