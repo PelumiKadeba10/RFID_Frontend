@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo } from 'react';
 import { io } from 'socket.io-client';
 import { useTable } from 'react-table';
 
-const socket = io('http://localhost:5000'); // Initialize socket outside the component
+const socket = io('https://rfid-backend-29um.onrender.com/log'); // Initialize socket outside the component
 
 function Upload() {
     const [logs, setLogs] = useState([]);
@@ -55,6 +55,7 @@ function Upload() {
             <h1 className="text-4xl font-semibold text-center mb-4">LIVE UPLOAD</h1>
 
             <div className='border border-r-8 p-6 shadow-inner mx-6'>
+                
                 {logs.length === 0 ? (
                     <p className="text-center font-bold text-xl">No logs yet...</p>
                 ) : (
