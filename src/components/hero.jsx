@@ -16,7 +16,7 @@ function Hero(){
 
         {/* Image Section */}
         <div className="flex justify-center pb-10 pt-10">
-          <img src="/assets/pic.jpg" className="w-60 h-60"/>
+          <img src="/pic.jpg" className="w-60 h-60"/>
         </div>
       </div>
       
