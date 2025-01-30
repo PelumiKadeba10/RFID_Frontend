@@ -44,26 +44,28 @@ function Upload() {
                 {/* Render the uploaded logs */}
                 <div>
                     {logs.length > 0 ? (
-                        <table className="table-auto w-full text-left">
-                            <thead>
-                                <tr>
-                                    <th className="border-b-2 py-2 px-4">Tag</th>
-                                    <th className="border-b-2 py-2 px-4">Name</th>
-                                    <th className="border-b-2 py-2 px-4">Matric</th>
-                                    <th className="border-b-2 py-2 px-4">Timestamp</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {logs.map((log, index) => (
-                                    <tr key={index}>
-                                        <td className="border-b py-2 px-4">{log.tag || 'N/A'}</td>
-                                        <td className="border-b py-2 px-4">{log.Name || 'Unknown'}</td>
-                                        <td className="border-b py-2 px-4">{log.Matric || 'N/A'}</td>
-                                        <td className="border-b py-2 px-4">{log.timestamp || 'N/A'}</td>
+                        <div className="overflow-y-auto max-h-96"> {/* Scrollable container */}
+                            <table className="table-auto w-full text-left">
+                                <thead>
+                                    <tr>
+                                        <th className="border-b-2 py-2 px-4">Tag</th>
+                                        <th className="border-b-2 py-2 px-4">Name</th>
+                                        <th className="border-b-2 py-2 px-4">Matric</th>
+                                        <th className="border-b-2 py-2 px-4">Timestamp</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    {logs.map((log, index) => (
+                                        <tr key={index}>
+                                            <td className="border-b py-2 px-4">{log.tag || 'N/A'}</td>
+                                            <td className="border-b py-2 px-4">{log.Name || 'Unknown'}</td>
+                                            <td className="border-b py-2 px-4">{log.Matric || 'N/A'}</td>
+                                            <td className="border-b py-2 px-4">{log.timestamp || 'N/A'}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
                     ) : (
                         <p>No logs uploaded yet.</p>
                     )}
