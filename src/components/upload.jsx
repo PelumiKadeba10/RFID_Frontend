@@ -22,8 +22,8 @@ function Upload() {
     const columns = useMemo(
         () => [
             {
-                Header: 'RFID Tag',
-                accessor: 'rfid_tag',
+                Header: 'Tag',
+                accessor: 'Matric',
             },
             {
                 Header: 'Name',
